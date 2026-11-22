@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Personal Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+/* MENU */
+header {
+    background: #080808;
+    padding: 20px 8%;
+    border-bottom: 1px solid #444;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #c5d77b;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: #c5d77b;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* KHUNG NỘI DUNG */
+section {
+    width: 85%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+h2 {
+    text-align: center;
+    color: #c5d77b;
+    margin-bottom: 25px;
+}
+
+/* TRANG CHỦ */
+.intro {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.intro h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    color: #ccc;
+    font-size: 17px;
+}
+
+.intro span {
+    color: #c5d77b;
+}
+
+/* ABOUT ME */
+.about {
+    background: white;
+    color: #333;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.about h2 {
+    color: #222;
+    text-align: left;
+}
+
+.about p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+/* KỸ NĂNG */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    color: #333;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    color: #222;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* DỰ ÁN */
+.projects {
+    background: white;
+    color: #333;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.project {
+    margin-bottom: 22px;
+}
+
+.project h3 {
+    color: #c62121;
+}
+
+.project p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* LIÊN HỆ */
+.contact {
+    background: white;
+    color: #333;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #080808;
+    color: #aaa;
+}
+
+/* RESPONSIVE */
+@media(max-width: 650px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        width: 92%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+<header>
+<nav>
+    <div class="logo">PHAN DOÃN TUẤN</div>
+
+    <ul>
+        <li><a href="#home">TRANG CHỦ</a></li>
+        <li><a href="#about">ABOUT ME</a></li>
+        <li><a href="#skills">HỌC TẬP</a></li>
+        <li><a href="#projects">DỰ ÁN</a></li>
+        <li><a href="#contact">LIÊN HỆ</a></li>
+    </ul>
+</nav>
+</header>
+<!-- TRANG CHỦ -->
+<section class="intro" id="home">
+    <h1>Xin chào! Tôi là <span>Phan Doãn Tuấn</span></h1>
+    <p>Sinh viên ngành Công nghệ thông tin</p>
+    <p>Welcome to my personal portfolio!</p>
+</section>
+
+<!-- GIỚI THIỆU -->
+<section id="about">
+    <div class="about">
+        <h2>ABOUT ME - GIỚI THIỆU</h2>
+
+        <p><b>Họ và tên:</b> Phan Doãn Tuấn</p>
+        <p><b>Năm sinh:</b> 2007</p>
+        <p><b>Quê quán:</b> Hà Tĩnh</p>
+        <p><b>Trường:</b> Đại học Vinh</p>
+        <p><b>Ngành học:</b> Công nghệ thông tin</p>
+        <p><b>Sở thích:</b> Công nghệ, lập trình và khám phá kiến thức mới.</p>
+        <p><b>Mục tiêu:</b> Trở thành lập trình viên chuyên nghiệp.</p>
+    </div>
+</section>
+
+<!-- HỌC TẬP -->
+<section id="skills">
+    <h2>MY SKILLS - KỸ NĂNG</h2>
+
+    <div class="skills">
+
+        <div class="card">
+            <h3>HTML & CSS</h3>
+            <p>Thiết kế và xây dựng giao diện website.</p>
+        </div>
+
+        <div class="card">
+            <h3>JavaScript</h3>
+            <p>Tìm hiểu lập trình và tạo chức năng cho website.</p>
+        </div>
+
+        <div class="card">
+            <h3>C / C++</h3>
+            <p>Học lập trình cơ bản và cấu trúc dữ liệu.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- DỰ ÁN -->
+<section id="projects">
+    <h2>MY PROJECTS - DỰ ÁN</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <h3>1. Website bán hàng</h3>
+            <p>Xây dựng giao diện website bán hàng bằng HTML và CSS.</p>
+        </div>
+
+        <div class="project">
+            <h3>2. Trang cá nhân</h3>
+            <p>Thiết kế website giới thiệu bản thân.</p>
+        </div>
+
+        <div class="project">
+            <h3>3. Cấu trúc dữ liệu và giải thuật</h3>
+            <p>Tìm hiểu các thuật toán và cách tổ chức dữ liệu.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- LIÊN HỆ -->
+<section id="contact">
+    <h2>CONTACT - LIÊN HỆ</h2>
+
+    <div class="contact">
+        <p>Email: your-email@gmail.com</p>
+        <p>Facebook: Facebook cá nhân</p>
+        <p>Địa chỉ: Hà Tĩnh, Việt Nam</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 PHAN DOÃN TUẤN | MY PERSONAL PORTFOLIO</p>
+</footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
